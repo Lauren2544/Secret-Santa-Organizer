@@ -1,0 +1,82 @@
+body{ 
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 50, 0.5),rgba(0, 0, 50, 0.5)), #abe0f5;
+  background-position: center; 
+  font-family: sans-serif; 
+}
+
+
+/*controls login*/ 
+.login {
+  margin-top: 1vw;
+  margin-left: 80vw;
+  background: #fff;
+  border-color: transparent;
+  color: black;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  height: 4vw;
+  width: 10vw;
+  text-align: center;
+}
+.login:hover {
+  cursor:pointer;
+  text-decoration: underline;
+}
+
+
+/*controls title*/
+.title h1{
+  margin-top: 3vw;
+  color:#abe0f5;
+  text-transform: uppercase;
+  font-size: 5vw;
+  font-family: cursive;
+  line-height: 10px;
+}
+
+
+/*controls information*/
+.information{
+  background: transparent;
+  font-size: 2vw;
+  width: 55vw;
+  color:white;
+  font-weight: bold;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 4px dotted  #abe0f5;
+}
+input{
+  height: 5vw;
+}
+
+
+/*controls sign up button*/
+.submit {
+  background: #fff;
+  border-color: transparent;
+  color: black;
+  font-size: 3.5vw;
+  font-weight: bold;
+  letter-spacing: 0.2vw;
+  height: 5.5vw;
+  width: 40vw;
+}
+.submit:hover {
+  background-color: Darkred;
+  cursor:pointer;
+  color: white;
+}
+
+
+/* This controls the sheigh */
+img.sheigh {
+  position: relative;
+  width: 40%;
+  right: 5vw;
+  top: 0px;
+  
+}
