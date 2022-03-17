@@ -1,11 +1,11 @@
 <html>
 <head>
-  <title> Registration for 2020 Secret Santa Gift Exchage</title>
+  <title> Registration for 2020 Secret Santa Gift Exchange</title>
   <link rel="stylesheet" type="text/css" href="register.css" media="screen">
   <style type="text/css"></style>
 </head>	
 
-
+<!--login button -->
 <form action="login.php" method="POST">
 		<input type="submit" value="Login" class="login" >
 	</form>

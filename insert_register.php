@@ -1,9 +1,9 @@
 
 
 <?php 
-$servername = "localhost";
+$servername = "localhost:8889";
 $username = "root";
-$password = "password";
+$password = "root";
 $dbname = "secret_santa_login";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
