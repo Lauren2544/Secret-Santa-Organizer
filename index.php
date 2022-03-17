@@ -15,7 +15,7 @@
 <div class="title"> 
     <h1>WELCOME</h1> 
   </div>
-
+	<!--sign-up form -->
 	<form action="insert_register.php" method="POST">
 
 		<input type="text" name="name" class="information" placeholder="Name"required><br>

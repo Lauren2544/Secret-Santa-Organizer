@@ -24,7 +24,7 @@
 <img src="WhiteWave.png" class="wave" alt="white wave">
 
 
-
+<!-- Instructions -->
 <div class="container">
   <img src="white.png" class="white" alt="white"><img src="white.png" class="white" alt="white">
   <div class="instructions"><b>The perfect way to organize your gift exchange in just three simple steps!</b></div>

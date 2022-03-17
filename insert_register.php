@@ -1,6 +1,5 @@
-
-
 <?php 
+#see comments in file insert_login.php files are very similar 
 $servername = "localhost:8889";
 $username = "root";
 $password = "root";
