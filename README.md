@@ -27,6 +27,6 @@ View the assignment results directly in the terminal.
 
 
 ## Contributing
-Feel free to open an issue or submit a pull request if you'd like to contribute or suggest new features.
+Feel free to open an issue or submit a pull request if you'd like to contribute or suggest new features. 
 
 
