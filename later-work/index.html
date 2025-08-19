@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+
+  <title>Secret Santa Organizer</title>
+  <link href="dist/output.css" rel="stylesheet">
+  <script src="santa.js"></script>
+  <link rel="icon" type="image/png" href="assets/present.png">
+
+</head>
+
+<body class="bg-[#abe0f5]">
+
+  <!-- This is my snow gif -->
+  <img src="assets/giphysnow.gif" class="absolute top-0 w-full h-[300px] object-cover" alt="snow">
+  <br>
+
+  <div class="flex items-center w-full">
+    <p class="w-1/2 text-[#FFFAF0] text-[6vw] font-[cursive] pl-[25pt] pr-[10pt]">
+      Secret Santa Organizer
+    </p>
+
+    <img src="assets/SantaSleigh.png" 
+        alt="Santa sleigh" 
+        class="w-2/5 relative inline-block align-middle">
+  </div>
+
+  <img src="assets/WhiteWave.png" class="w-full block m-0 p-0" alt="white wave">
+
+  <div class="w-full bg-white p-8 shadow-lg text-center space-y-8">
+    <p style="font-family: 'Abyssinica SIL', sans-serif;" class="text-[#abe0f5] text-2xl md:text-3xl font-bold">
+      The perfect way to organize your gift exchange in just four simple steps!
+    </p>
+
+    <div class="flex flex-col md:flex-row items-center rounded-xl p-6 shadow-[0_0_7px_2px_rgba(0,0,0,0.20)] space-y-4 md:space-y-0 md:space-x-6">
+      <div class="w-16 h-16 flex items-center justify-center rounded-full border-4 border-black text-black font-bold text-4xl">
+        1
+      </div>
+      <div class="text-black text-lg md:text-xl flex flex-col items-start">
+        <span class="mb-2">Upload the configuration JSON file. Here is an example <a href="example_config.json" class="underline text-blue-600 hover:text-blue-800">config</a> file.</span>
+       
+        <div class="flex items-center space-x-3">
+          <!-- Styled button -->
+          <label for="fileInput" 
+            class="border border-black bg-gray-100 text-black py-1 px-2 rounded-sm hover:bg-gray-200 transition">
+            Upload JSON
+          </label>
+
+          <!-- Text showing chosen file -->
+          <span id="fileName" class="text-gray-600">No file chosen</span>
+
+          <!-- Hidden file input -->
+          <input type="file" id="fileInput" accept=".json" style="display: none;">
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="flex flex-col md:flex-row items-center rounded-xl p-6 shadow-[0_0_7px_2px_rgba(0,0,0,0.20)] space-y-4 md:space-y-0 md:space-x-6">
+      <div class="w-16 h-16 flex items-center justify-center rounded-full border-4 border-black text-black font-bold text-4xl">
+        2
+      </div>
+      <div class="text-black text-lg md:text-xl flex flex-col items-start">
+        <span class="mb-2">Generate your Secret Santa pairs.</span>
+        <label class="text-sm md:text-base text-gray-700 mb-3">
+          <input type="checkbox" id="addToConfig" class="mr-1">
+          Add the results as restrictions to the original configuration JSON file. This way you won't get the same person next year!
+        </label>
+        <button id="generateBtn" class="border border-black bg-gray-100 text-black py-1 px-2 rounded-sm hover:bg-gray-200 transition">
+          Generate Pairs
+        </button>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center rounded-xl p-6 shadow-[0_0_7px_2px_rgba(0,0,0,0.20)] space-y-4 md:space-y-0 md:space-x-6">
+      <div class="w-16 h-16 flex items-center justify-center rounded-full border-4 border-black text-black font-bold text-4xl">
+        3
+      </div>
+      <div class="text-black text-lg md:text-xl flex flex-col items-start">
+        <span class="mb-2">Download the JSON file(s) generated. Button(s) will show up below.</span>
+        <div class="flex space-x-3">
+          <a id="downloadLink" style="display: none" 
+            class="border border-black bg-gray-100 text-black py-1 px-3 rounded-sm hover:bg-gray-200 transition">
+            Download Results
+          </a>
+          <a id="downloadLink2" style="display: none" 
+            class="border border-black bg-gray-100 text-black py-1 px-3 rounded-sm hover:bg-gray-200 transition">
+            Download Config
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center shadow-[0_0_7px_2px_rgba(0,0,0,0.20)] rounded-xl p-6 space-y-4 md:space-y-0 md:space-x-6">
+      <div class="w-16 h-16 flex items-center justify-center rounded-full border-4 border-black text-black font-bold text-4xl">
+        4
+      </div>
+      <div class="text-black text-lg md:text-xl flex flex-col items-start">
+        <span class="mb-2">Run the <a href="emailscript.py" class="underline text-blue-600 hover:text-blue-800">email</a> sending script.</span>
+        <span class="text-sm md:text-base text-gray-600">Save the python email script to a file named <code>emailscript.py</code>, you will need to run this script to send the results to your family members.</span>
+        <span class="text-sm md:text-base text-gray-600">1. Edit the script to include your email credentials, you can also choose to customize the email message in this step!</span>
+        <span class="text-sm md:text-base text-gray-600">2. Run the program <code>python emailscript.py</code></span>
+      </div>
+    </div>
+
+  </div>
+  </body>
+</html>
+ 

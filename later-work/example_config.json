@@ -1,0 +1,43 @@
+{
+    "people": [
+        {
+            "name": "Lauren", 
+            "email": "lauren@gmail.com", 
+            "wishlist": "potatoes"
+        }, 
+        {
+            "name": "Ella", 
+            "email": "ella@gmail.com", 
+            "wishlist": "peaches"
+        }, 
+        {
+            "name": "Rachel", 
+            "email": "rachel@gmail.com", 
+            "wishlist": "tomaotes"
+        },
+        {
+            "name": "Elizabeth", 
+            "email": "elizabeth@gmail.com", 
+            "wishlist": "pickles"
+        },
+        {
+            "name": "Khushi", 
+            "email": "khushi@gmail.com", 
+            "wishlist": "pineapples"
+        }
+    ],
+    "restrictions": [
+        {
+            "giver": "Elizabeth", 
+            "reciever": "Khushi"
+        }, 
+        {
+            "giver": "Khushi", 
+            "reciever": "Elizabeth"
+        },
+        {
+            "giver": "Rachel", 
+            "reciever": "Khushi"
+        }
+    ]
+}

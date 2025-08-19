@@ -15,5 +15,6 @@
 # Ignore all zip files
 *.zip
 
-# Ignore an entire folder
-GiftExchangeCLIVersion/
+# Ignore some folders and files
+past_results/
+hardcoded_secret_santa.cpp
